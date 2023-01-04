@@ -141,7 +141,7 @@ const WidgetsDropdown = () => {
                     backgroundColor: 'transparent',
                     borderColor: 'rgba(255,255,255,.55)',
                     pointBackgroundColor: getStyle('--cui-info'),
-                    data: [1, 18, 9, 17, 34, 22, 11],
+                    data: [65, 59, 84, 84, 51, 55, 40],
                   },
                 ],
               }}
@@ -163,8 +163,8 @@ const WidgetsDropdown = () => {
                     },
                   },
                   y: {
-                    min: -9,
-                    max: 39,
+                    min: 30,
+                    max: 89,
                     display: false,
                     grid: {
                       display: false,
@@ -177,6 +177,7 @@ const WidgetsDropdown = () => {
                 elements: {
                   line: {
                     borderWidth: 1,
+                    tension: 0.4,
                   },
                   point: {
                     radius: 4,
@@ -217,17 +218,17 @@ const WidgetsDropdown = () => {
           }
           chart={
             <CChartLine
-              className="mt-3"
+              className="mt-3 mx-3"
               style={{ height: '70px' }}
               data={{
                 labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
                 datasets: [
                   {
                     label: 'My First dataset',
-                    backgroundColor: 'rgba(255,255,255,.2)',
+                    backgroundColor: 'transparent',
                     borderColor: 'rgba(255,255,255,.55)',
-                    data: [78, 81, 80, 45, 34, 12, 40],
-                    fill: true,
+                    pointBackgroundColor: getStyle('--cui-warning'),
+                    data: [65, 59, 84, 84, 51, 55, 40],
                   },
                 ],
               }}
@@ -240,19 +241,33 @@ const WidgetsDropdown = () => {
                 maintainAspectRatio: false,
                 scales: {
                   x: {
-                    display: false,
+                    grid: {
+                      display: false,
+                      drawBorder: false,
+                    },
+                    ticks: {
+                      display: false,
+                    },
                   },
                   y: {
+                    min: 30,
+                    max: 89,
                     display: false,
+                    grid: {
+                      display: false,
+                    },
+                    ticks: {
+                      display: false,
+                    },
                   },
                 },
                 elements: {
                   line: {
-                    borderWidth: 2,
+                    borderWidth: 1,
                     tension: 0.4,
                   },
                   point: {
-                    radius: 0,
+                    radius: 4,
                     hitRadius: 10,
                     hoverRadius: 4,
                   },
@@ -289,64 +304,59 @@ const WidgetsDropdown = () => {
             </CDropdown>
           }
           chart={
-            <CChartBar
+            <CChartLine
               className="mt-3 mx-3"
               style={{ height: '70px' }}
               data={{
-                labels: [
-                  'January',
-                  'February',
-                  'March',
-                  'April',
-                  'May',
-                  'June',
-                  'July',
-                  'August',
-                  'September',
-                  'October',
-                  'November',
-                  'December',
-                  'January',
-                  'February',
-                  'March',
-                  'April',
-                ],
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
                 datasets: [
                   {
                     label: 'My First dataset',
-                    backgroundColor: 'rgba(255,255,255,.2)',
+                    backgroundColor: 'transparent',
                     borderColor: 'rgba(255,255,255,.55)',
-                    data: [78, 81, 80, 45, 34, 12, 40, 85, 65, 23, 12, 98, 34, 84, 67, 82],
-                    barPercentage: 0.6,
+                    pointBackgroundColor: getStyle('--cui-danger'),
+                    data: [65, 59, 84, 84, 51, 55, 40],
                   },
                 ],
               }}
               options={{
-                maintainAspectRatio: false,
                 plugins: {
                   legend: {
                     display: false,
                   },
                 },
+                maintainAspectRatio: false,
                 scales: {
                   x: {
                     grid: {
                       display: false,
-                      drawTicks: false,
+                      drawBorder: false,
                     },
                     ticks: {
                       display: false,
                     },
                   },
                   y: {
+                    min: 30,
+                    max: 89,
+                    display: false,
                     grid: {
                       display: false,
-                      drawBorder: false,
-                      drawTicks: false,
                     },
                     ticks: {
                       display: false,
                     },
+                  },
+                },
+                elements: {
+                  line: {
+                    borderWidth: 1,
+                    tension: 0.4,
+                  },
+                  point: {
+                    radius: 4,
+                    hitRadius: 10,
+                    hoverRadius: 4,
                   },
                 },
               }}
