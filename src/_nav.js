@@ -11,6 +11,7 @@ import {
   cilPencil,
   cilPuzzle,
   cilSpeedometer,
+  cilGlobeAlt,
   cilStar,
 } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
@@ -50,7 +51,7 @@ const _nav = [
     component: CNavGroup,
     name: 'Etraplar',
     to: '/base',
-    icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
+    icon: <CIcon icon={cilGlobeAlt} customClassName="nav-icon" />,
     items: [
       {
         component: CNavItem,
