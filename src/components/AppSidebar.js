@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 
-import { CSidebar, CSidebarBrand, CSidebarNav, CSidebarToggler } from '@coreui/react'
+import { CImage, CSidebar, CSidebarBrand, CSidebarNav, CSidebarToggler } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 
 import { AppSidebarNav } from './AppSidebarNav'
@@ -30,8 +30,14 @@ const AppSidebar = () => {
       }}
     >
       <CSidebarBrand className="d-none d-md-flex" to="/">
-        <CIcon className="sidebar-brand-full" icon={logoNegative} height={35} />
-        <CIcon className="sidebar-brand-narrow" icon={sygnet} height={35} />
+        {/* <CIcon className="sidebar-brand-full" icon={logoNegative} height={50} /> */}
+        <CImage
+          src="https://telecom.tm/static/main/images/telecom-logo.png"
+          alt="logo"
+          fluid
+          height={200}
+        />
+        {/* <CIcon className="sidebar-brand-narrow" icon={sygnet} height={35} /> */}
       </CSidebarBrand>
       <CSidebarNav>
         <SimpleBar>

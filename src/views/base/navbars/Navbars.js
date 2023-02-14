@@ -77,11 +77,11 @@ const CNavbars = () => {
           <CNavbar color="faded" light>
             <CNavbarBrand>
               <CImage
-                src="https://placekitten.com/g/30/30"
+                src="https://telecom.tm/static/main/images/telecom-logo.png"
                 className="d-inline-block align-top"
                 alt="CoreuiVue"
               />
-              CoreUI React
+              Turkmen Telecom
             </CNavbarBrand>
           </CNavbar>
         </CCardBody>

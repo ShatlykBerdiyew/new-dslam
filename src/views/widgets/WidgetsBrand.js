@@ -36,7 +36,7 @@ const WidgetsBrand = ({ withCharts }) => {
 
   return (
     <CRow>
-      <CCol sm={6} lg={3}>
+      {/* <CCol sm={6} lg={3}>
         <CWidgetStatsD
           className="mb-4"
           {...(withCharts && {
@@ -70,9 +70,9 @@ const WidgetsBrand = ({ withCharts }) => {
             '--cui-card-cap-bg': '#3b5998',
           }}
         />
-      </CCol>
+      </CCol> */}
 
-      <CCol sm={6} lg={3}>
+      {/* <CCol sm={6} lg={3}>
         <CWidgetStatsD
           className="mb-4"
           {...(withCharts && {
@@ -106,9 +106,9 @@ const WidgetsBrand = ({ withCharts }) => {
             '--cui-card-cap-bg': '#00aced',
           }}
         />
-      </CCol>
+      </CCol> */}
 
-      <CCol sm={6} lg={3}>
+      {/* <CCol sm={6} lg={3}>
         <CWidgetStatsD
           className="mb-4"
           {...(withCharts && {
@@ -142,9 +142,9 @@ const WidgetsBrand = ({ withCharts }) => {
             '--cui-card-cap-bg': '#4875b4',
           }}
         />
-      </CCol>
+      </CCol> */}
 
-      <CCol sm={6} lg={3}>
+      {/* <CCol sm={6} lg={3}>
         <CWidgetStatsD
           className="mb-4"
           color="warning"
@@ -176,7 +176,7 @@ const WidgetsBrand = ({ withCharts }) => {
             { title: 'meetings', value: '4' },
           ]}
         />
-      </CCol>
+      </CCol> */}
     </CRow>
   )
 }

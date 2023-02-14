@@ -81,10 +81,10 @@ const Dashboard = () => {
   ]
 
   const progressGroupExample3 = [
-    { title: 'Organic Search', icon: cibGoogle, percent: 56, value: '191,235' },
-    { title: 'Facebook', icon: cibFacebook, percent: 15, value: '51,223' },
-    { title: 'Twitter', icon: cibTwitter, percent: 11, value: '37,564' },
-    { title: 'LinkedIn', icon: cibLinkedin, percent: 8, value: '27,319' },
+    { title: 'Ulanyjy sany', icon: cilUser, percent: 56, value: '191,235' },
+    { title: 'Yazgylaryn sany', icon: cilUser, percent: 15, value: '51,223' },
+    { title: 'Bosh gowrum', icon: cilUser, percent: 11, value: '37,564' },
+    { title: 'Arzalaryn sany', icon: cilUser, percent: 8, value: '27,319' },
   ]
 
   const tableExample = [
